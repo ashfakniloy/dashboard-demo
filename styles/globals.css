@@ -1,4 +1,28 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.sidebar::-webkit-scrollbar {
+  width: 0px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: grey;
+  border-radius: 40px;
+}
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+* html,
+body {
+  @apply p-0 m-0 font-Poppins;
+}
+
+/* html,
 body {
   padding: 0;
   margin: 0;
@@ -13,4 +37,4 @@ a {
 
 * {
   box-sizing: border-box;
-}
+} */
